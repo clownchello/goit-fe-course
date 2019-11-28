@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "OpenSans-Bold";
-    src: url(../css/fonts/OpenSans/OpenSans-Bold.ttf
+    src: url(../css/fonts/OpenSans/OpenSans-Bold.ttf);
     font-weight: bold;
 }
 
@@ -29,6 +29,7 @@
     box-sizing: border-box;
   }
 html {
+    margin-left: 200px;
     width: 1110px;
 }
 .site-navigation {
@@ -105,13 +106,13 @@ a:hover {
     content: '';
     position: absolute;
     bottom: 0;
-    top: 830px;
+    top: 60px;
     left: 489px;
     width: 125px;
     height: 5px;
     background: #1abc9c;
 }
-}
+
 .clearfix::after {
     display: table;
     content: "";
@@ -191,7 +192,7 @@ img {
 .second-menu-header {
     font-size: 16px;
     margin-bottom: 50px;
-    font-family: "OpenSans";
+    font-family: "OpenSans-Semibold";
     font-weight: 700;
     color: #515151;
     display: block;
@@ -209,7 +210,7 @@ img {
 }
 .second-menu-info {
     font-size: 14px;
-    font-family: "OpenSans";
+    font-family: "OpenSans-Semibold";
     font-weight: 700;
     color: #515151;
 }
