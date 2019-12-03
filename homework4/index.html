@@ -9,25 +9,28 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <header class="site-navigation clearfix">
-        <nav class="clearfix">
-            <h1 class="logo">MART</h1>
-            <ul class="list">
-                <li class="list_item"><a href="#">HOME</a></li>
-                <li class="list_item"><a href="#">ABOUT US</a></li>
-                <li class="list_item"><a href="#">PAGE</a></li>
-                <li class="list_item"><a href="#">SHOP</a></li>
-                <li class="list_item"><a href="#">BLOG</a></li>
-                <li class="list_item"><a href="#">CONTACT US</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="main-content">
+    <div class="container">
+        <header class="site-navigation clearfix">
+            <nav class="clearfix">
+                <h1 class="logo"><a class="logo-link" href="">MART</a></h1>
+                <ul class="list">
+                    <li class="list_item"><a class="list-item-link" href="#">HOME</a></li>
+                    <li class="list_item"><a class="list-item-link" href="#">ABOUT US</a></li>
+                    <li class="list_item"><a class="list-item-link" href="#">PAGE</a></li>
+                    <li class="list_item"><a class="list-item-link" href="#">SHOP</a></li>
+                    <li class="list_item"><a class="list-item-link" href="#">BLOG</a></li>
+                    <li class="list_item"><a class="list-item-link" href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
     <main class="content">
-        <section class="first-section">
-            <h2 class="first-header">FEATURED PRODUCTS</h2>
-            <ul class="clearfix">
-                <li class="featured-section">
+        <div class="container">
+            <section class="first-section">
+                <h2 class="first-header">FEATURED PRODUCTS</h2>
+                <ul class="clearfix">
+                    <li class="featured-section">
                     <a href="#">
                         <img src="../homework4/img/blue tshirt-1.png" class="img-gallery" width="255" height="282" alt="TSHIRT">
                         <div class="section-item">BLUE TSHIRT</div>
@@ -54,7 +57,6 @@
                         <div class="section-item">BLUE TSHIRT</div>
                         <div class="section-item-cost">$26</div>
                     </a>
-
                 </li>
                 <li class="featured-section">
                     <a href="#">
@@ -85,10 +87,11 @@
                     </a>
                 </li>
             </ul>
-            </section>
-            <section class="second-section clearfix">
-                <h2 class="second-header">LATEST NEWS</h2>
-                <article class="second-menu">
+        </section>
+        <section class="second-section clearfix">
+            <h2 class="second-header">LATEST NEWS</h2>
+            <article class="second-menu">
+                <a href="#">
                     <img src="../homework4/img/map.png" alt="Map">
                     <h3 class="second-menu-header">Lorem Ipsum.Proin gravida nibh vel velit auctor aliquet.Aenean</h3>
                     <p class="second-menu-info">
@@ -96,29 +99,35 @@
                         amet nibh vulputate cursus a sit amet mauris.Morbi  accumsan ipsum velit.
                         Nam nec tellus a odio tincidunt
                     </p>
+                </a>
                     <button class="button">Read More</button>
                 </article>
                 <article class="second-menu">
-                    <img src="../homework4/img/girls.png" alt="Map">
-                    <h3 class="second-menu-header">Lorem Ipsum.Proin gravida nibh vel velit auctor aliquet.Aenean</h3>
-                    <p class="second-menu-info">
-                        Nam nec tellus a odio tincidunt auc.Duis sed odio sit
-                    amet nibh vulputate cursus a sit amet mauris.Morbi  accumsan ipsum velit.
-                    Nam nec tellus a odio tincidunt
-                </p>
-                <button class="button">Read More</button>
-            </article>
-            <article class="second-menu">
-                <img src="../homework4/img/bus.png" alt="Map">
-                <h3 class="second-menu-header">Lorem Ipsum.Proin gravida nibh vel velit auctor aliquet.Aenean</h3>
-                <p class="second-menu-info">
-                    Nam nec tellus a odio tincidunt auc.Duis sed odio sit
-                    amet nibh vulputate cursus a sit amet mauris.Morbi  accumsan ipsum velit.
-                    Nam nec tellus a odio tincidunt
-                </p>
-                <button class="button">Read More</button>
-            </article>
-        </section>
+                    <a href="">
+                        <img src="../homework4/img/girls.png" alt="Map">
+                        <h3 class="second-menu-header">Lorem Ipsum.Proin gravida nibh vel velit auctor aliquet.Aenean</h3>
+                        <p class="second-menu-info">
+                            Nam nec tellus a odio tincidunt auc.Duis sed odio sit
+                            amet nibh vulputate cursus a sit amet mauris.Morbi  accumsan ipsum velit.
+                            Nam nec tellus a odio tincidunt
+                        </p>
+                    </a>
+                    <button class="button">Read More</button>
+                </article>
+                <article class="second-menu">
+                    <a href="">
+                        <img src="../homework4/img/bus.png" alt="Map">
+                        <h3 class="second-menu-header">Lorem Ipsum.Proin gravida nibh vel velit auctor aliquet.Aenean</h3>
+                        <p class="second-menu-info">
+                            Nam nec tellus a odio tincidunt auc.Duis sed odio sit
+                            amet nibh vulputate cursus a sit amet mauris.Morbi  accumsan ipsum velit.
+                            Nam nec tellus a odio tincidunt
+                        </p>
+                    </a>
+                    <button class="button">Read More</button>
+                </article>
+            </section>
+        </div>
     </main>
 </body>
 </html>
