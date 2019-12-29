@@ -16,7 +16,7 @@
 
 .container {
     margin: 0 auto;
-    width: 1536px;
+    width: 1100px;
 }
 .site-navigation {
     padding-top: 40px;
@@ -72,7 +72,7 @@ img {
     position: absolute;
 }
 
-.opacity {
+li .opacity {
     position: absolute;
     opacity: 0.5;
 }
@@ -80,6 +80,7 @@ img {
 .slider {
     background-color: #e9f0fd;
     height: 609px;
+    position: relative;
 }
 
 .slider-info,
@@ -96,16 +97,18 @@ img {
     top: 50%;
     right: 50%;
     transform: translateY(-50%);
-    transform: translateX(50%);
+    transform: translateX(75%);
     font-size: 46px;
+    width: 600px;
 }
 
 .slider-info {
     top: 60%;
     right: 56%;
     transform: translateY(-60%);
-    transform: translateX(43%);
+    transform: translateX(74%);
     font-size: 18px;
+    opacity: 0.;
 }
 
 .slider-button {
@@ -119,17 +122,20 @@ img {
 .slider-button-perv {
     top: 62%;
     transform: translateY(-62%);
-    left:270px;
+    left:220px;
     border: none;
     z-index: 100;
-    background-color: rgba(78, 155, 137, 0.9 );
 }
 .slider-button-next {
     top: 62%;
     transform: translateY(-62%);
-    right: 290px;
+    right: -40px;
     border: none;
     z-index: 100;
+}
+
+.slider-button:hover {
+    background-color: rgba(78, 155, 137, 0.9 );
 }
 
 .arrow-perv {
@@ -168,11 +174,11 @@ img {
 
 .first-header::after {
     content: '';
-    position: absolute;
+    width: 124px;
+    margin: 0 auto;
+    display: block;
     bottom: 0;
-    top: 60px;
-    left: 700px;
-    width: 125px;
+    margin-top:40px ;
     height: 5px;
     background: #1abc9c;
 }
@@ -180,11 +186,16 @@ img {
 .featured-section {
     font-size: 0;
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 20px;
+    float: left;
 }
 
 .featured-section:first-child {
-    margin-left: 225px;
+    margin-left: 10px;
+}
+
+.featured-section:last-child {
+    margin-right: 0;
 }
 
 .featured-section:nth-child(4n) {
@@ -222,16 +233,17 @@ img {
     font-family: "Roboto-Black";
 }
 
-.featured-section {
-    display: block;
+
+.float-container {
+    margin: 0;
+    padding: 0;
+    width: 1100px;
+    display: inline-block;
+    text-align: left;
     position: relative;
 }
 
-.flex-container {
-    display: flex;
-}
-
-.main {
+.section-container {
     background-color: #e9f0fd;
     padding-top: 102px;
     padding-bottom: 100px;
@@ -311,8 +323,20 @@ img {
     position: absolute;
     top: -130px;
     transform: translateY(50%);
-    left: 14px;
+    left: 22px;
     visibility: hidden;
+}
+
+.second-icon {
+    left: 294px;
+}
+
+.third-icon {
+    left: 570px;
+}
+
+.fourth-icon {
+    left: 850px;
 }
 
 .img-background {
