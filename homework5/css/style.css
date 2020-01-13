@@ -190,10 +190,6 @@ li .opacity {
     float: left;
 }
 
-.featured-section:first-child {
-    margin-left: 10px;
-}
-
 .featured-section:last-child {
     margin-right: 0;
 }
