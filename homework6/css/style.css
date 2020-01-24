@@ -10,6 +10,7 @@
 }
 
 a {
+    display: block;
     text-decoration: none;
     color: #95e1d3;
 }
@@ -32,8 +33,8 @@ a {
     list-style: none;
 }
 
-.list-item-link {
-    margin-right: 60px;
+.nav-list_item {
+    margin-right:60px;
 }
 
 .list-item-link,
@@ -69,21 +70,19 @@ a {
     color: #f38181;
 }
 
-/* .list-item-link:hover::after,
-.list-item-link-last:hover::after {
-    content:"";
-    display: flex;
-    width: 30px;
-    height: 3px;
-    background-color: #f38181;
-} */
-
- .first-header {
-    width: 100%;
+ .header-italic {
+    font-style: italic;
 }
 
 .second-header {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.second-section > h2 {
+    margin-bottom: 30px;
 }
 
 .second-header::after {
@@ -100,16 +99,23 @@ a {
     margin-bottom: 40px;
 }
 
+
 .first-section,
 .second-section {
   width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  margin-bottom: 90px;
+}
+
+.second-section {
+    margin-bottom: 60px;
+}
+
+.first-section {
+    margin-bottom: 90px;
 }
 
 .section-list {
@@ -124,7 +130,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 100px 20px 0 0;
+    margin: 0 20px 0 0;
   }
 
 .list-header {
@@ -179,7 +185,7 @@ a {
     color:#b3b3b3
 }
 
-.gradient {
+.overlay {
     background: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
     background: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
     background: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
@@ -189,44 +195,52 @@ a {
     content: '';
     height: 470px;
     width: 380px;
-    opacity:0.5;
+    opacity:0.8;
     z-index: 100;
-    visibility: hidden;
+    opacity: 0;
 }
 
-.gradient:hover::after {
-    opacity: .8;
+.overlay:hover::after {
     transform: translate(-10px, -10px);
   }
 
 .gallery-item:hover .gallery-item,
 .gallery-item:hover .icon-container  {
   transform: translate(-10px, -10px);
-  opacity: 1;
 }
 
-.gallery-item:hover .gradient {
-    visibility: visible;
+.gallery-item:hover .overlay {
+    opacity: 0.7;
 }
 
 .gallery-item:hover .icon-container-item-first {
-    visibility: visible;
+    opacity: 1;
+
 }
 
 .gallery-item:hover .icon-container-item-second {
-    visibility: visible;
+    opacity: 1;
+
 }
 
 .gallery-item:hover .icon-container-item-third {
-    visibility: visible;
+    opacity: 1;
+
 }
 
 .gallery-item:hover .icon-container-item-fourth {
-    visibility: visible;
+    opacity: 1;
+
 }
 
 .second-section > p {
     margin-bottom: 40px;
+}
+
+.icons {
+    z-index: 999999;
+    list-style: none;
+    display: flex;
 }
 
 .icon-container {
@@ -238,6 +252,7 @@ a {
 
 .icon-container:hover {
     transition:  200ms linear;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
 }
 
 .icon-container-item-first,
@@ -254,7 +269,7 @@ a {
     border-right: 1px solid #e5b283;
     z-index: 1000;
     transform: translate(280%, 520%);
-    visibility: hidden;
+    opacity: 0;
 }
 
 .icon-container-item-second {
@@ -292,7 +307,6 @@ a {
     width: 1200px;
     height: 60px;
     margin: 0 auto;
-    margin-top: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
