@@ -1,3 +1,7 @@
+body {
+    font-family: "Montserrat" , sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -133,6 +137,10 @@ a {
     margin: 0 20px 0 0;
   }
 
+.list-item:nth-child(-n+3) {
+    margin-bottom: 30px;
+}
+
 .list-header {
     width: 300px;
     display: flex;
@@ -166,8 +174,15 @@ a {
     margin-right: 30px;
 }
 
+.background {
+    width: 380px;
+    height: 470px;
+    background-color:#95e1d3;
+    display: block;
+}
+
 .photo {
-    min-width: 380px;
+    max-width: 380px;
     max-height: 470px;
     position: absolute;
     top: 0;
@@ -241,6 +256,8 @@ a {
     z-index: 999999;
     list-style: none;
     display: flex;
+    position: absolute;
+    transform: translate(70%, 500%);
 }
 
 .icon-container {
@@ -268,7 +285,6 @@ a {
     color: red;
     border-right: 1px solid #e5b283;
     z-index: 1000;
-    transform: translate(280%, 520%);
     opacity: 0;
 }
 
