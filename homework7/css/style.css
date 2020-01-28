@@ -1,0 +1,235 @@
+@font-face {
+    font-family: "Montserrat-Regular";
+      src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+        font-family: "Montserrat-Bold";
+          src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "RobotoSlab";
+      src: url(./fonts/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+    font-family: "DroidSerif";
+      src: url(./fonts/DroidSerif.ttf);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container,
+.form-container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #222222;
+    font-weight: 400;
+    font-family: "Montserrat-Regular" , sans-serif;
+}
+
+.logo-link {
+    color: #fed134;
+}
+
+.site-navigation {
+    padding-top: 40px;
+    margin-bottom: 100px;
+}
+
+.navigation-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 128px;
+}
+
+.list {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-list_item {
+    margin-right:40px;
+}
+
+.nav-list_item:last-child {
+    margin-right: 0;
+}
+
+.list-item-link:hover,
+.list-item-link-last:hover {
+    color: #fed134;
+}
+
+.header-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-title {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Montserrat" , sans-serif;
+}
+
+.sub-title {
+    color: #adadad;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 60px;
+    font-family: "DroidSerif" , sans-serif;
+}
+
+.section-list {
+    display: flex;
+    list-style: none;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.section-list-item {
+    width: 33%;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.section-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.item-title {
+    margin-bottom: 20px;
+    color: #222222;
+    font-weight: 700;
+    font-family: "Montserrat-Bold" , sans-serif;
+}
+
+.item-sub-title {
+    color: #adadad;
+    font-family: "RobotoSlab", sans-serif;
+}
+
+.first-title-img::before,
+.second-title-img::before,
+.third-title-img::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    background-image: url(./img/bucket.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 156px;
+    left: 95px;
+}
+
+.second-title-img::before {
+    background-image: url(./img/laptop.png);
+}
+
+.third-title-img::before {
+    background-image: url(./img/lock.png);
+}
+
+.form-section {
+    background-image: url(./img/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.form-title {
+    font-weight: 700;
+    font-family: "Montserrat-Bold" , sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-left {
+    display: flex;
+    flex: .5 0 ;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 2%;
+    justify-content: space-between;
+    height: 210px;
+}
+
+.form-left-item {
+    width: 96%;
+    height: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-right {
+    flex: .5 0 ;
+    height: 210px;
+}
+
+.form-right-item {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-family: "Montserrat-Regular";
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.button {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-inner {
+    width: 240px;
+    height: 66px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 66px;
+    margin: 40px 0;
+    background-color: #fed136;
+    cursor: pointer;
+    color: #fff;
+    font-family: "Montserrat-Regular";
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.border:focus:valid {
+    outline: 3px solid rgb(24, 185, 24);
+}
+
+.border:focus:invalid {
+    outline: 3px solid rgb(233, 0, 50);
+}
