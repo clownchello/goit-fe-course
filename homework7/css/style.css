@@ -44,7 +44,7 @@ a {
     color: #fed134;
 }
 
-.site-navigation {
+.   -navigation {
     padding-top: 40px;
     margin-bottom: 100px;
 }
@@ -75,9 +75,10 @@ a {
     color: #fed134;
 }
 
-.header-section {
+.first-section {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 70px;
 }
 
 .main-title {
@@ -170,11 +171,14 @@ a {
 .form-left {
     display: flex;
     flex: .5 0 ;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     margin-right: 2%;
     justify-content: space-between;
-    height: 210px;
+}
+
+.form-left input:not(:last-child) {
+    margin-bottom: 28px;
 }
 
 .form-left-item {
