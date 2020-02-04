@@ -1,0 +1,260 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+}
+
+.background-container {
+    background-image: url(./img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 540px;
+}
+
+.nav {
+    height: 215px;
+    justify-content: space-between;
+}
+
+.header-button {
+    padding: 5px 10px 5px 10px;
+    background-color: transparent;
+    border:2px solid transparent;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.2;
+    display: block;
+}
+
+.header-button:hover {
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.header-title {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.header-sub-title {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.sub-title-desc {
+    font-size: 18px;
+    color: white;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 300 ;
+}
+
+.sub-title-button {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid rgb(255, 78, 80);
+    background-color: rgb(255, 78, 80);
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 7px 35px 7px 35px;
+    display: block;
+    z-index: 10;
+}
+
+.sub-title-button:hover {
+    background-color: cyan;
+}
+
+.section-title {
+    font-size: 22px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+
+.partner-list {
+    list-style: none;
+}
+
+.partner-list-item {
+    position: relative;
+    margin: 0;
+}
+
+.partner-list-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+
+.partner-photo {
+    border-radius: 50%;
+    width: 121px;
+    height: 121px;
+}
+
+
+.partner-name {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+
+.list-item-text {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 300;
+}
+
+.partner-photo {
+    position: relative;
+}
+
+.partner-list-item::after {
+    width: 30px;
+    height: 30px;
+    content: '';
+    position: absolute;
+    display: table;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./img/first-icon.png);
+    background-color: rgb(255, 78, 80);
+    border-radius: 50%;
+    bottom: 75px;
+    right:85px;
+}
+
+.second-partner::after {
+    background-color: #ffa507;
+    background-image: url(./img/second-icon.png);
+}
+
+.third-partner::after {
+    background-color: #1cd7ad;
+    background-image: url(./img/third-icon.png);
+}
+
+.fourth-partner::after {
+    background-color: #4e73db;
+    background-image: url(./img/fourth-icon.png);
+}
+
+.section-button {
+    border: 2px solid rgb(255, 78, 80);
+    color: rgb(255, 78, 80);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 7px 0px 7px 0px;
+    display: block;
+}
+
+.section-button:hover {
+    background-color: green;
+}
+
+@media screen and (min-width: 768px) {
+.background-container {
+        height: 700px;
+}
+
+.nav {
+    height: 110px;
+}
+
+.header-title {
+    display: flex;
+    text-align: left;
+}
+
+.first-button {
+    margin-left: 180px;
+}
+
+.partner-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.partner-list-item {
+    width: 50%;
+}
+
+.fourth-partner {
+    margin-bottom: 30px;
+}
+
+}
+
+@media (min-width: 992px) {
+
+.background-container {
+    background-image: url(./img/background-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0.1;
+    position: relative;
+}
+
+.background-container::before {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(26, 25, 21);
+    position: absolute;
+    content: '';
+    display: table;
+    z-index: 0.5;
+    opacity: 0.2;
+}
+
+.header-list {
+    z-index: 10;
+}
+
+.header-title {
+    z-index: 10;
+}
+
+.container-item {
+    z-index: 20;
+}
+
+.header-sub-title {
+    font-size: 35px;
+    font-family: "Montserrat";
+    z-index: 10;
+}
+
+.sub-title-desc {
+    z-index: 10;
+}
+
+.section-button {
+    width: 30%;
+}
+
+}
