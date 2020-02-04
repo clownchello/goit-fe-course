@@ -34,11 +34,17 @@ body {
     justify-content: center;
 }
 
+.header-list {
+    padding: 0;
+    margin: 0;
+}
+
 .header-button {
     margin-top: 20px;
     padding: 5px 10px 5px 10px;
     background-color: transparent;
-    border:none;
+    border: 2px solid transparent;
+    border-radius: 20px;
     color: #ffffff;
     font-size: 14px;
     line-height: 1.2;
@@ -52,10 +58,6 @@ body {
     border-radius: 20px;
 }
 
-.first-button {
-    margin-left: -50px ;
-
-}
 
 .header-title,
 .header-sub-title,
@@ -99,6 +101,11 @@ body {
     padding: 7px 35px 7px 35px;
     display: block;
     z-index: 10;
+}
+
+.sub-title-button:hover {
+    background-color: cyan;
+    border-color: violet;
 }
 
 .section {
@@ -209,6 +216,10 @@ body {
     display: block;
 }
 
+.section-button:hover {
+    background-color: turquoise;
+    border-color: whitesmoke;
+}
 
 @media (min-width: 768px) {
 
@@ -319,7 +330,8 @@ body {
 }
 
 .header-list {
-    margin-top: 40px;
+    margin: 0;
+    padding: 0;
     align-items: center;
     z-index: 10;
 }
