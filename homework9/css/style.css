@@ -139,8 +139,8 @@ body {
     background-image: url(./img/first-icon.png);
     background-color: rgb(255, 78, 80);
     border-radius: 50%;
-    bottom: 75px;
-    right:85px;
+    bottom: 50px;
+    right:180px;
 }
 
 .second-partner::after {
@@ -192,7 +192,7 @@ body {
 }
 
 .first-button {
-    margin-left: 180px;
+    margin-left: 160px;
 }
 
 .partner-list {
@@ -206,6 +206,11 @@ body {
 
 .fourth-partner {
     margin-bottom: 30px;
+}
+
+.partner-list-item::after {
+    bottom: 75px;
+    right:85px;
 }
 
 }
@@ -255,6 +260,15 @@ body {
 
 .section-button {
     width: 30%;
+}
+
+.flex {
+    display: flex;
+}
+
+.partner-list-item::after {
+    bottom: 80px;
+    right:55px;
 }
 
 }
