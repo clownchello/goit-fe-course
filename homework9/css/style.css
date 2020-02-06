@@ -182,6 +182,10 @@ body {
         height: 700px;
 }
 
+.flex {
+    display: flex;
+}
+
 .nav {
     height: 110px;
 }
@@ -268,7 +272,7 @@ body {
 
 .partner-list-item::after {
     bottom: 80px;
-    right:55px;
+    right:70px;
 }
 
 }
