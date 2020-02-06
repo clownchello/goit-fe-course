@@ -139,8 +139,8 @@ body {
     background-image: url(./img/first-icon.png);
     background-color: rgb(255, 78, 80);
     border-radius: 50%;
-    bottom: 50px;
-    right:180px;
+    bottom: 65px;
+    right:195px;
 }
 
 .second-partner::after {
@@ -272,7 +272,7 @@ body {
 
 .partner-list-item::after {
     bottom: 80px;
-    right:70px;
+    right:85px;
 }
 
 }
